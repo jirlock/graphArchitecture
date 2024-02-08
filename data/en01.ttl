@@ -1,0 +1,586 @@
+@prefix rec: <http://www.w3id.org/rec#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> a rec:Building.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rdfs:label "工学部一号館".
+
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/-1> a rec:Level.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/-1> rdfs:label "地下一階".
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/-1> rec:isPartOf <http://utcmdx.ac.jp/resource/building/hongo/en/01>.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rec:hasPart <http://utcmdx.ac.jp/resource/level/hongo/en/01/-1>.
+
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> a rec:Level.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rdfs:label "一階".
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:isPartOf <http://utcmdx.ac.jp/resource/building/hongo/en/01>.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rec:hasPart <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/2> a rec:Level.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/2> rdfs:label "二階".
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/2> rec:isPartOf <http://utcmdx.ac.jp/resource/building/hongo/en/01>.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rec:hasPart <http://utcmdx.ac.jp/resource/level/hongo/en/01/2>.
+
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/3> a rec:Level.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/3> rdfs:label "三階".
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/3> rec:isPartOf <http://utcmdx.ac.jp/resource/building/hongo/en/01>.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rec:hasPart <http://utcmdx.ac.jp/resource/level/hongo/en/01/3>.
+
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/4> a rec:Level.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/4> rdfs:label "四階".
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/4> rec:isPartOf <http://utcmdx.ac.jp/resource/building/hongo/en/01>.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rec:hasPart <http://utcmdx.ac.jp/resource/level/hongo/en/01/4>.
+
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/5> a rec:Level.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/5> rdfs:label "五階".
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/5> rec:isPartOf <http://utcmdx.ac.jp/resource/building/hongo/en/01>.
+<http://utcmdx.ac.jp/resource/building/hongo/en/01> rec:hasPart <http://utcmdx.ac.jp/resource/level/hongo/en/01/5>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/1> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/1> rdfs:label "エントランス".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/1> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/1>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/1> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/1>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rdfs:label "ロビー".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/46>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/46> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/47>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/47> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/2>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/3> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/3> rdfs:label "建築学専攻事務室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/3> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/3>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/3> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/3>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/4> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/4> rdfs:label "野口教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/4> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/4>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/4> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/4>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/5> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/5> rdfs:label "前准教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/5> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/5>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/5> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/5>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/6> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/6> rdfs:label "前研究室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/6> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/6>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/6> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/6>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/7> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/7> rdfs:label "赤司教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/7> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/7>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/7> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/7>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/8> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/8> rdfs:label "赤司研究室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/8> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/8>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/8> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/8>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/9> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/9> rdfs:label "環境系ゼミ室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/9> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/9>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/9> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/9>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/10> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/10> rdfs:label "小崎准教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/10> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/10>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/10> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/10>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/11> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/11> rdfs:label "佐久間研究室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/11> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/11>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/11> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/11>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/12> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/12> rdfs:label "佐久間教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/12> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/12>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/12> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/12>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/13> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/13> rdfs:label "丸山教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/13> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/13>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/13> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/13>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/14> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/14> rdfs:label "社基".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/14> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/14>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/14> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/14>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/15> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/15> rdfs:label "11号講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/15> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/15>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/15> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/15>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/16> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/16> rdfs:label "12号講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/16> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/16>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/16> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/16>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/17> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/17> rdfs:label "13号講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/17> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/17>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/17> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/17>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/18> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/18> rdfs:label "14号講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/18> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/18>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/18> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/18>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19> rdfs:label "15号講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/19>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/20> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/20> rdfs:label "16号演習講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/20> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/20>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/20> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/20>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/21> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/21> rdfs:label "17号演習講義室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/21> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/21>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/21> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/21>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/22> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/22> rdfs:label "地球観測データ統融合連携研究機構".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/22> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/22>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/22> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/22>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/23> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/23> rdfs:label "小池教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/23> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/23>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/23> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/23>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/24> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/24> rdfs:label "河川流域環境秘書室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/24> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/24>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/24> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/24>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/25> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/25> rdfs:label "知花講師室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/25> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/25>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/25> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/25>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/26> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/26> rdfs:label "河川流域環境研究室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/26> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/26>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/26> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/26>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/27> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/27> rdfs:label "内村准教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/27> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/27>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/27> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/27>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/28> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/28> rdfs:label "土質秘書室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/28> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/28>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/28> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/28>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/29> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/29> rdfs:label "東畑教授室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/29> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/29>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/29> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/29>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/30> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/30> rdfs:label "非常勤講師室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/30> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/30>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/30> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/30>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/31> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/31> rdfs:label "社基事務室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/31> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/31>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/31> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/31>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32> rdfs:label "VRセンター1".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/32>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33> rdfs:label "VRセンター2".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/33>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34> rdfs:label "VRセンター3".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/34>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35> rdfs:label "AIセンター".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/35>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36> rdfs:label "DSS".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/36>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/37> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/37> rdfs:label "一号館管理室".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/37> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/37>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/37> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/37>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> rdfs:label "小空間".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/66>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/66> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/38>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/39> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/39> rdfs:label "EPS".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/39> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/39>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/40> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/40> rdfs:label "WC男1".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/40> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/40>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/40> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/40>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/41> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/41> rdfs:label "WC男2".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/41> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/41>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/41> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/41>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/42> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/42> rdfs:label "WC男3".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/42> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/42>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/42> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/42>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/43> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/43> rdfs:label "WC女1".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/43> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/43>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/43> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/43>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/44> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/44> rdfs:label "WC女2".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/44> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/44>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/44> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/44>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/45> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/45> rdfs:label "WC女3".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/45> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/45>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/45> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/45>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/46> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/46> rdfs:label "階段1".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/46> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/46>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/47> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/47> rdfs:label "階段2".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/47> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/47>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/48> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/48> rdfs:label "階段3".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/48> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/48>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/48> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/48>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/49> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/49> rdfs:label "階段4".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/49> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/49>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/49> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/49>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rdfs:label "廊下1".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/63>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/63> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/50>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rdfs:label "廊下2".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/62>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/62> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/65>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/65> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/51>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rdfs:label "廊下3".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/64>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/64> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/52>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rdfs:label "廊下4".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/67>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/67> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/53>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rdfs:label "廊下5".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/54>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rdfs:label "廊下6".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/55>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rdfs:label "廊下7".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/60>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/60> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/56>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rdfs:label "廊下8".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/58>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/58> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/59>.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/59> rec:accessibleFrom <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/57>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/58> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/58> rdfs:label "設備室1".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/58> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/58>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/59> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/59> rdfs:label "設備室2".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/59> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/59>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/60> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/60> rdfs:label "設備室3".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/60> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/60>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/61> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/61> rdfs:label "設備室4".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/61> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/61>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/62> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/62> rdfs:label "設備室5".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/62> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/62>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/63> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/63> rdfs:label "設備室6".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/63> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/63>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/64> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/64> rdfs:label "設備室7".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/64> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/64>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/65> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/65> rdfs:label "設備室8".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/65> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/65>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/66> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/66> rdfs:label "ELV".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/66> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/66>.
+
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/67> a rec:Room.
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/67> rdfs:label "スロープ".
+<http://utcmdx.ac.jp/resource/room/hongo/en/01/1/67> rec:isPartOf <http://utcmdx.ac.jp/resource/level/hongo/en/01/1>.
+<http://utcmdx.ac.jp/resource/level/hongo/en/01/1> rec:hasPart <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/67>.
+
+
