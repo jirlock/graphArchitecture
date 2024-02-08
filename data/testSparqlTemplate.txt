@@ -1,0 +1,13 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ex: <http://example.com#>
+
+DELETE {
+    ?sub ex:myPredicate ?oldValue .
+}
+INSERT {
+    ?sub ex:myPredicate ?newValue .
+}
+WHERE {
+    ?id rdf:type ex:MyType.
+    ?subject ex:isRelatedTo ?id.
+}
