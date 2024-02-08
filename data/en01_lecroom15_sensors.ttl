@@ -1,0 +1,12 @@
+@prefix sensor: <http://utcmdx.ac.jp/resource/sensor/>.
+@prefix room: <http://utcmdx.ac.jp/resource/room/hongo/en/01/1/>.
+
+
+sensor:1
+    a brick:Illuminance_Sensor;
+    rdfs:label "Illuminance Sensor 2W";
+    rec:isPointOf room:19;
+    brick:lastKnwonValue 0.
+
+room:19
+    rec:hasPoint sensor:1.

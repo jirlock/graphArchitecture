@@ -82,3 +82,5 @@ def createRoomRelationRdf(roomUri1, roomUri2):
 def executeSparqlTemplate():
     return 0
 
+#New Version
+def create_sensor_rdf(sensor_uri, room_uri, )

@@ -130,6 +130,11 @@ def delete_query(base_url, query_name):
     params = { "name": query_name }
     return requests.delete(url, params=params)
 
+def execute_query_simple(base_url, repo_id, query_string):
+    url = base_url + '/repositories/' + repo_id
+    params = { "query": query_string }
+    return requests.get(url, params=params)
+
 def execute_query(base_url, repo_id, query_name, query_string):
     url = base_url + '/repositories/' + repo_id
     params = {

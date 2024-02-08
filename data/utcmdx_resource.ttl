@@ -1,0 +1,114 @@
+@prefix cmdx: <http://utcmdx.ac.jp/resource#> .
+@prefix voc: <http://utcmdx.ac.jp/vocabulary#> .
+@prefix rec: <http://www.w3id.org/rec#> .
+@prefix brick: <https://brickschema.org/schema/Brick#> .
+
+cmdx:room0
+    rdf:type voc:room;
+    rdfs:label "15号講義室";
+    brick:hasPoint cmdx:sensor0;
+    brick:hasPoint cmdx:sensor1;
+    brick:hasPoint cmdx:sensor2;
+    brick:hasPoint cmdx:sensor3;
+    brick:hasPoint cmdx:sensor4;
+    brick:hasPoint cmdx:sensor5;
+    brick:hasPoint cmdx:sensor6;
+    brick:hasPoint cmdx:sensor7;
+    brick:hasPoint cmdx:sensor8;
+    brick:hasPoint cmdx:sensor9;
+    brick:hasPoint cmdx:sensor10;
+    brick:hasPoint cmdx:sensor11;
+    brick:hasPoint cmdx:sensor12.
+
+cmdx:sensor0
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ 2W";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor1
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ 2e";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor2
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ 3w1";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999;
+    voc:macAddress .
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+
+cmdx:sensor
+    rdf:type brick:Illuminance_Sensor;
+    rdfs:label "照度センサ ";
+    brick:isPointOf cmdx:room0;
+    brick:lastKnwonValue 0.0;
+    voc:lastUpdated 9999999999.
+

@@ -1,0 +1,6 @@
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+
+SELECT ?s
+WHERE {
+    ?s rdf:type brick:Illuminance_Sensor.
+}
