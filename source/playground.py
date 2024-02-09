@@ -1,6 +1,6 @@
 import myAzure
 import myMqtt
-import myRdf
+import myRdf as rdf
 import myGraphDB as gdb
 
 import requests

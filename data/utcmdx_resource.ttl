@@ -20,95 +20,106 @@ cmdx:room0
     brick:hasPoint cmdx:sensor11;
     brick:hasPoint cmdx:sensor12.
 
-cmdx:sensor0
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ 2W";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor0 a brick:Illuminance_Sensor.
+cmdx:sensor0 rdfs:label "Illuminance Sensor 2w".
+cmdx:sensor0 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor0.
+cmdx:sensor0 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor0 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor0 voc:macAddress "08:3a:f2:23:cc:80".
 
-cmdx:sensor1
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ 2e";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor1 a brick:Illuminance_Sensor.
+cmdx:sensor1 rdfs:label "Illuminance Sensor 2e".
+cmdx:sensor1 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor1.
+cmdx:sensor1 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor1 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor1 voc:macAddress "08:3a:f2:22:d1:40".
 
-cmdx:sensor2
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ 3w1";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999;
-    voc:macAddress .
+cmdx:sensor2 a brick:Illuminance_Sensor.
+cmdx:sensor2 rdfs:label "Illuminance Sensor 3w1".
+cmdx:sensor2 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor2.
+cmdx:sensor2 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor2 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor2 voc:macAddress "8c:4b:14:15:94:10".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor3 a brick:Illuminance_Sensor.
+cmdx:sensor3 rdfs:label "Illuminance Sensor 3w2".
+cmdx:sensor3 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor3.
+cmdx:sensor3 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor3 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor3 voc:macAddress "08:3a:f2:2b:70:ec".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor4 a brick:Illuminance_Sensor.
+cmdx:sensor4 rdfs:label "Illuminance Sensor 3c".
+cmdx:sensor4 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor4.
+cmdx:sensor4 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor4 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor4 voc:macAddress "08:3a:f2:2d:47:d0".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor5 a brick:Illuminance_Sensor.
+cmdx:sensor5 rdfs:label "Illuminance Sensor 3e1".
+cmdx:sensor5 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor5.
+cmdx:sensor5 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor5 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor5 voc:macAddress "08:3a:f2:2c:58:14".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor6 a brick:Illuminance_Sensor.
+cmdx:sensor6 rdfs:label "Illuminance Sensor 3e2".
+cmdx:sensor6 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor6.
+cmdx:sensor6 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor6 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor6 voc:macAddress "8c:4b:14:15:7e:84".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor7 a brick:Illuminance_Sensor.
+cmdx:sensor7 rdfs:label "Illuminance Sensor 4w1".
+cmdx:sensor7 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor7.
+cmdx:sensor7 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor7 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor7 voc:macAddress "08:4b:14:15:bf:b8".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor8 a brick:Illuminance_Sensor.
+cmdx:sensor8 rdfs:label "Illuminance Sensor 4w2".
+cmdx:sensor8 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor8.
+cmdx:sensor8 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor8 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor8 voc:macAddress "8c:4b:14:14:91:bc".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor9 a brick:Illuminance_Sensor.
+cmdx:sensor9 rdfs:label "Illuminance Sensor 4c".
+cmdx:sensor9 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor9.
+cmdx:sensor9 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor9 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor9 voc:macAddress "08:3a:f2:2d:47:80".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor10 a brick:Illuminance_Sensor.
+cmdx:sensor10 rdfs:label "Illuminance Sensor 4e1".
+cmdx:sensor10 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor10.
+cmdx:sensor10 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor10 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor10 voc:macAddress "78:e3:6d:11:3d:20".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
+cmdx:sensor11 a brick:Illuminance_Sensor.
+cmdx:sensor11 rdfs:label "Illuminance Sensor 4e2".
+cmdx:sensor11 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor11.
+cmdx:sensor11 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor11 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor11 voc:macAddress "94:b9:7e:65:fc:00".
 
-cmdx:sensor
-    rdf:type brick:Illuminance_Sensor;
-    rdfs:label "照度センサ ";
-    brick:isPointOf cmdx:room0;
-    brick:lastKnwonValue 0.0;
-    voc:lastUpdated 9999999999.
-
+cmdx:sensor12 a brick:Illuminance_Sensor.
+cmdx:sensor12 rdfs:label "Illuminance Sensor 5c".
+cmdx:sensor12 brick:isPointOf cmdx:0.
+cmdx:0 brick:hasPoint cmdx:sensor12.
+cmdx:sensor12 brick:lastKnownValue "0.0"^^xsd:float.
+cmdx:sensor12 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor12 voc:macAddress "8c:4b:14:15:9f:dc".

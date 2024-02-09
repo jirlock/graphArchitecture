@@ -49,6 +49,9 @@ def createLevelUri(baseUri, campus, faculty, bldg, level):
 def createRoomUri(baseUri, campus, faculty, bldg, level, room):
     return '<' + baseUri + '/room/' + campus + '/' + faculty + '/' + bldg + '/' + level + '/' + room + '>'
 
+#====================
+# Create RDF
+#====================
 #return String
 def createBuildingRdf(baseUri, campus, faculty, bldg, label):
     bldgUri = createBuildingUri(baseUri, campus, faculty, bldg)
@@ -82,5 +85,18 @@ def createRoomRelationRdf(roomUri1, roomUri2):
 def executeSparqlTemplate():
     return 0
 
-#New Version
-def create_sensor_rdf(sensor_uri, room_uri, )
+
+#====================
+#New Version Create RDF
+#====================
+def create_sensor_rdf(sensor_uri, room_uri, type_uri, label, mac_address):
+    init_value = 0.0
+    init_time = 9999999999
+    class_triple = sensor_uri + ' a ' + type_uri + '.'
+    label_triple = sensor_uri + ' rdfs:label "' + label + '".'
+    is_point_of_triple = sensor_uri + ' brick:isPointOf ' + room_uri + '.'
+    has_point_triple = room_uri + ' brick:hasPoint ' + sensor_uri + '.'
+    value_triple = sensor_uri + ' brick:lastKnownValue "' + str(init_value) + '"^^xsd:float.'
+    time_triple = sensor_uri + ' voc:lastUpdated "' + str(init_time) + '"^^xsd:long.'
+    mac_triple = sensor_uri + ' voc:macAddress "' + mac_address + '".'
+    return concatRdf([class_triple, label_triple, is_point_of_triple, has_point_triple, value_triple, time_triple, mac_triple])
