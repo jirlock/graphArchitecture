@@ -1,125 +1,346 @@
-@prefix cmdx: <http://utcmdx.ac.jp/resource#> .
-@prefix voc: <http://utcmdx.ac.jp/vocabulary#> .
-@prefix rec: <http://www.w3id.org/rec#> .
-@prefix brick: <https://brickschema.org/schema/Brick#> .
+@prefix cmdx: <http://utcmdx.ac.jp/resource#>.
+@prefix voc: <http://utcmdx.ac.jp/vocabulary#>.
+@prefix brick: <https://brickschema.org/schema/Brick#>.
 
-cmdx:room0
-    rdf:type voc:room;
-    rdfs:label "15号講義室";
-    brick:hasPoint cmdx:sensor0;
-    brick:hasPoint cmdx:sensor1;
-    brick:hasPoint cmdx:sensor2;
-    brick:hasPoint cmdx:sensor3;
-    brick:hasPoint cmdx:sensor4;
-    brick:hasPoint cmdx:sensor5;
-    brick:hasPoint cmdx:sensor6;
-    brick:hasPoint cmdx:sensor7;
-    brick:hasPoint cmdx:sensor8;
-    brick:hasPoint cmdx:sensor9;
-    brick:hasPoint cmdx:sensor10;
-    brick:hasPoint cmdx:sensor11;
-    brick:hasPoint cmdx:sensor12.
+cmdx:room0 rdf:type voc:room.
+cmdx:room0 rdfs:label "15号講義室".
 
 cmdx:sensor0 a brick:Illuminance_Sensor.
-cmdx:sensor0 rdfs:label "Illuminance Sensor 2w".
-cmdx:sensor0 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor0.
-cmdx:sensor0 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor0 voc:lastUpdated "9999999999"^^xsd:long.
+cmdx:sensor0 rdfs:label "Illuminance Sensor 2e".
+cmdx:sensor0 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor0.
+cmdx:sensor0 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor0 voc:lastUpdated "0"^^xsd:long.
 cmdx:sensor0 voc:macAddress "08:3a:f2:23:cc:80".
 
-cmdx:sensor1 a brick:Illuminance_Sensor.
-cmdx:sensor1 rdfs:label "Illuminance Sensor 2e".
-cmdx:sensor1 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor1.
-cmdx:sensor1 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor1 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor1 voc:macAddress "08:3a:f2:22:d1:40".
+cmdx:sensor1 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor1 rdfs:label "Humidity Temperature Sensor 2e".
+cmdx:sensor1 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor1.
+cmdx:sensor1 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor1 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor1 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor1 voc:macAddress "08:3a:f2:23:cc:80".
 
-cmdx:sensor2 a brick:Illuminance_Sensor.
-cmdx:sensor2 rdfs:label "Illuminance Sensor 3w1".
-cmdx:sensor2 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor2.
-cmdx:sensor2 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor2 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor2 voc:macAddress "8c:4b:14:15:94:10".
+cmdx:sensor2 a voc:IR_Sensor.
+cmdx:sensor2 rdfs:label "IR Sensor 2e".
+cmdx:sensor2 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor2.
+cmdx:sensor2 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor2 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor2 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor2 voc:macAddress "08:3a:f2:23:cc:80".
 
 cmdx:sensor3 a brick:Illuminance_Sensor.
-cmdx:sensor3 rdfs:label "Illuminance Sensor 3w2".
-cmdx:sensor3 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor3.
-cmdx:sensor3 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor3 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor3 voc:macAddress "08:3a:f2:2b:70:ec".
+cmdx:sensor3 rdfs:label "Illuminance Sensor 2w".
+cmdx:sensor3 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor3.
+cmdx:sensor3 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor3 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor3 voc:macAddress "08:3a:f2:22:d1:40".
 
-cmdx:sensor4 a brick:Illuminance_Sensor.
-cmdx:sensor4 rdfs:label "Illuminance Sensor 3c".
-cmdx:sensor4 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor4.
-cmdx:sensor4 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor4 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor4 voc:macAddress "08:3a:f2:2d:47:d0".
+cmdx:sensor4 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor4 rdfs:label "Humidity Temperature Sensor 2w".
+cmdx:sensor4 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor4.
+cmdx:sensor4 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor4 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor4 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor4 voc:macAddress "08:3a:f2:22:d1:40".
 
-cmdx:sensor5 a brick:Illuminance_Sensor.
-cmdx:sensor5 rdfs:label "Illuminance Sensor 3e1".
-cmdx:sensor5 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor5.
-cmdx:sensor5 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor5 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor5 voc:macAddress "08:3a:f2:2c:58:14".
+cmdx:sensor5 a voc:IR_Sensor.
+cmdx:sensor5 rdfs:label "IR Sensor 2w".
+cmdx:sensor5 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor5.
+cmdx:sensor5 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor5 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor5 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor5 voc:macAddress "08:3a:f2:22:d1:40".
 
 cmdx:sensor6 a brick:Illuminance_Sensor.
 cmdx:sensor6 rdfs:label "Illuminance Sensor 3e2".
-cmdx:sensor6 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor6.
-cmdx:sensor6 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor6 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor6 voc:macAddress "8c:4b:14:15:7e:84".
+cmdx:sensor6 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor6.
+cmdx:sensor6 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor6 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor6 voc:macAddress "8c:4b:14:15:94:10".
 
-cmdx:sensor7 a brick:Illuminance_Sensor.
-cmdx:sensor7 rdfs:label "Illuminance Sensor 4w1".
-cmdx:sensor7 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor7.
-cmdx:sensor7 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor7 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor7 voc:macAddress "08:4b:14:15:bf:b8".
+cmdx:sensor7 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor7 rdfs:label "Humidity Temperature Sensor 3e2".
+cmdx:sensor7 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor7.
+cmdx:sensor7 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor7 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor7 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor7 voc:macAddress "8c:4b:14:15:94:10".
 
-cmdx:sensor8 a brick:Illuminance_Sensor.
-cmdx:sensor8 rdfs:label "Illuminance Sensor 4w2".
-cmdx:sensor8 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor8.
-cmdx:sensor8 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor8 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor8 voc:macAddress "8c:4b:14:14:91:bc".
+cmdx:sensor8 a voc:IR_Sensor.
+cmdx:sensor8 rdfs:label "IR Sensor 3e2".
+cmdx:sensor8 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor8.
+cmdx:sensor8 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor8 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor8 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor8 voc:macAddress "8c:4b:14:15:94:10".
 
 cmdx:sensor9 a brick:Illuminance_Sensor.
-cmdx:sensor9 rdfs:label "Illuminance Sensor 4c".
-cmdx:sensor9 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor9.
-cmdx:sensor9 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor9 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor9 voc:macAddress "08:3a:f2:2d:47:80".
+cmdx:sensor9 rdfs:label "Illuminance Sensor 3e1".
+cmdx:sensor9 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor9.
+cmdx:sensor9 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor9 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor9 voc:macAddress "08:3a:f2:2b:70:ec".
 
-cmdx:sensor10 a brick:Illuminance_Sensor.
-cmdx:sensor10 rdfs:label "Illuminance Sensor 4e1".
-cmdx:sensor10 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor10.
-cmdx:sensor10 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor10 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor10 voc:macAddress "78:e3:6d:11:3d:20".
+cmdx:sensor10 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor10 rdfs:label "Humidity Temperature Sensor 3e1".
+cmdx:sensor10 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor10.
+cmdx:sensor10 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor10 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor10 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor10 voc:macAddress "08:3a:f2:2b:70:ec".
 
-cmdx:sensor11 a brick:Illuminance_Sensor.
-cmdx:sensor11 rdfs:label "Illuminance Sensor 4e2".
-cmdx:sensor11 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor11.
-cmdx:sensor11 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor11 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor11 voc:macAddress "94:b9:7e:65:fc:00".
+cmdx:sensor11 a voc:IR_Sensor.
+cmdx:sensor11 rdfs:label "IR Sensor 3e1".
+cmdx:sensor11 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor11.
+cmdx:sensor11 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor11 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor11 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor11 voc:macAddress "08:3a:f2:2b:70:ec".
 
 cmdx:sensor12 a brick:Illuminance_Sensor.
-cmdx:sensor12 rdfs:label "Illuminance Sensor 5c".
-cmdx:sensor12 brick:isPointOf cmdx:0.
-cmdx:0 brick:hasPoint cmdx:sensor12.
-cmdx:sensor12 brick:lastKnownValue "0.0"^^xsd:float.
-cmdx:sensor12 voc:lastUpdated "9999999999"^^xsd:long.
-cmdx:sensor12 voc:macAddress "8c:4b:14:15:9f:dc".
+cmdx:sensor12 rdfs:label "Illuminance Sensor 3c".
+cmdx:sensor12 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor12.
+cmdx:sensor12 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor12 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor12 voc:macAddress "08:3a:f2:2d:47:d0".
+
+cmdx:sensor13 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor13 rdfs:label "Humidity Temperature Sensor 3c".
+cmdx:sensor13 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor13.
+cmdx:sensor13 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor13 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor13 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor13 voc:macAddress "08:3a:f2:2d:47:d0".
+
+cmdx:sensor14 a voc:IR_Sensor.
+cmdx:sensor14 rdfs:label "IR Sensor 3c".
+cmdx:sensor14 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor14.
+cmdx:sensor14 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor14 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor14 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor14 voc:macAddress "08:3a:f2:2d:47:d0".
+
+cmdx:sensor15 a brick:Illuminance_Sensor.
+cmdx:sensor15 rdfs:label "Illuminance Sensor 3w1".
+cmdx:sensor15 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor15.
+cmdx:sensor15 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor15 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor15 voc:macAddress "08:3a:f2:2c:58:14".
+
+cmdx:sensor16 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor16 rdfs:label "Humidity Temperature Sensor 3w1".
+cmdx:sensor16 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor16.
+cmdx:sensor16 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor16 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor16 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor16 voc:macAddress "08:3a:f2:2c:58:14".
+
+cmdx:sensor17 a voc:IR_Sensor.
+cmdx:sensor17 rdfs:label "IR Sensor 3w1".
+cmdx:sensor17 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor17.
+cmdx:sensor17 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor17 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor17 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor17 voc:macAddress "08:3a:f2:2c:58:14".
+
+cmdx:sensor18 a brick:Illuminance_Sensor.
+cmdx:sensor18 rdfs:label "Illuminance Sensor 3w2".
+cmdx:sensor18 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor18.
+cmdx:sensor18 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor18 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor18 voc:macAddress "8c:4b:14:15:7e:84".
+
+cmdx:sensor19 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor19 rdfs:label "Humidity Temperature Sensor 3w2".
+cmdx:sensor19 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor19.
+cmdx:sensor19 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor19 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor19 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor19 voc:macAddress "8c:4b:14:15:7e:84".
+
+cmdx:sensor20 a voc:IR_Sensor.
+cmdx:sensor20 rdfs:label "IR Sensor 3w2".
+cmdx:sensor20 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor20.
+cmdx:sensor20 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor20 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor20 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor20 voc:macAddress "8c:4b:14:15:7e:84".
+
+cmdx:sensor21 a brick:Illuminance_Sensor.
+cmdx:sensor21 rdfs:label "Illuminance Sensor 4e2".
+cmdx:sensor21 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor21.
+cmdx:sensor21 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor21 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor21 voc:macAddress "08:4b:14:15:bf:b8".
+
+cmdx:sensor22 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor22 rdfs:label "Humidity Temperature Sensor 4e2".
+cmdx:sensor22 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor22.
+cmdx:sensor22 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor22 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor22 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor22 voc:macAddress "08:4b:14:15:bf:b8".
+
+cmdx:sensor23 a voc:IR_Sensor.
+cmdx:sensor23 rdfs:label "IR Sensor 4e2".
+cmdx:sensor23 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor23.
+cmdx:sensor23 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor23 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor23 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor23 voc:macAddress "08:4b:14:15:bf:b8".
+
+cmdx:sensor24 a brick:Illuminance_Sensor.
+cmdx:sensor24 rdfs:label "Illuminance Sensor 4e1".
+cmdx:sensor24 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor24.
+cmdx:sensor24 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor24 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor24 voc:macAddress "8c:4b:14:14:91:bc".
+
+cmdx:sensor25 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor25 rdfs:label "Humidity Temperature Sensor 4e1".
+cmdx:sensor25 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor25.
+cmdx:sensor25 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor25 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor25 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor25 voc:macAddress "8c:4b:14:14:91:bc".
+
+cmdx:sensor26 a voc:IR_Sensor.
+cmdx:sensor26 rdfs:label "IR Sensor 4e1".
+cmdx:sensor26 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor26.
+cmdx:sensor26 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor26 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor26 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor26 voc:macAddress "8c:4b:14:14:91:bc".
+
+cmdx:sensor27 a brick:Illuminance_Sensor.
+cmdx:sensor27 rdfs:label "Illuminance Sensor 4c".
+cmdx:sensor27 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor27.
+cmdx:sensor27 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor27 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor27 voc:macAddress "08:3a:f2:2d:47:80".
+
+cmdx:sensor28 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor28 rdfs:label "Humidity Temperature Sensor 4c".
+cmdx:sensor28 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor28.
+cmdx:sensor28 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor28 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor28 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor28 voc:macAddress "08:3a:f2:2d:47:80".
+
+cmdx:sensor29 a voc:IR_Sensor.
+cmdx:sensor29 rdfs:label "IR Sensor 4c".
+cmdx:sensor29 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor29.
+cmdx:sensor29 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor29 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor29 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor29 voc:macAddress "08:3a:f2:2d:47:80".
+
+cmdx:sensor30 a brick:Illuminance_Sensor.
+cmdx:sensor30 rdfs:label "Illuminance Sensor 4w1".
+cmdx:sensor30 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor30.
+cmdx:sensor30 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor30 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor30 voc:macAddress "78:e3:6d:11:3d:20".
+
+cmdx:sensor31 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor31 rdfs:label "Humidity Temperature Sensor 4w1".
+cmdx:sensor31 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor31.
+cmdx:sensor31 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor31 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor31 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor31 voc:macAddress "78:e3:6d:11:3d:20".
+
+cmdx:sensor32 a voc:IR_Sensor.
+cmdx:sensor32 rdfs:label "IR Sensor 4w1".
+cmdx:sensor32 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor32.
+cmdx:sensor32 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor32 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor32 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor32 voc:macAddress "78:e3:6d:11:3d:20".
+
+cmdx:sensor33 a brick:Illuminance_Sensor.
+cmdx:sensor33 rdfs:label "Illuminance Sensor 4w2".
+cmdx:sensor33 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor33.
+cmdx:sensor33 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor33 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor33 voc:macAddress "94:b9:7e:65:fc:00".
+
+cmdx:sensor34 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor34 rdfs:label "Humidity Temperature Sensor 4w2".
+cmdx:sensor34 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor34.
+cmdx:sensor34 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor34 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor34 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor34 voc:macAddress "94:b9:7e:65:fc:00".
+
+cmdx:sensor35 a voc:IR_Sensor.
+cmdx:sensor35 rdfs:label "IR Sensor 4w2".
+cmdx:sensor35 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor35.
+cmdx:sensor35 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor35 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor35 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor35 voc:macAddress "94:b9:7e:65:fc:00".
+
+cmdx:sensor36 a brick:Illuminance_Sensor.
+cmdx:sensor36 rdfs:label "Illuminance Sensor 5c".
+cmdx:sensor36 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor36.
+cmdx:sensor36 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+cmdx:sensor36 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor36 voc:macAddress "8c:4b:14:15:9f:dc".
+
+cmdx:sensor37 a voc:Humidity_Temperature_Sensor.
+cmdx:sensor37 rdfs:label "Humidity Temperature Sensor 5c".
+cmdx:sensor37 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor37.
+cmdx:sensor37 voc:lastKnownHumidityValue "0.0"^^xsd:float.
+cmdx:sensor37 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor37 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor37 voc:macAddress "8c:4b:14:15:9f:dc".
+
+cmdx:sensor38 a voc:IR_Sensor.
+cmdx:sensor38 rdfs:label "IR Sensor 5c".
+cmdx:sensor38 brick:isPointOf cmdx:room0.
+cmdx:room0 brick:hasPoint cmdx:sensor38.
+cmdx:sensor38 voc:lastKnownTemperatureValue "0.0"^^xsd:float.
+cmdx:sensor38 voc:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+cmdx:sensor38 voc:lastUpdated "0"^^xsd:long.
+cmdx:sensor38 voc:macAddress "8c:4b:14:15:9f:dc".
+
+

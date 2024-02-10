@@ -1,0 +1,22 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX cmdx: <http://utcmdx.ac.jp/resource#>
+PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+
+DELETE {
+    ?s voc:lastKnownTemperatureValue ?oldTemperature.
+    ?s voc:lastKnownTemperatureArrayValue ?oldTemperatureArray.
+    ?s voc:lastUpdated ?oldTime.
+}
+INSERT {
+    ?s voc:lastKnownTemperatureValue ?newTemperature.
+    ?s voc:lastKnownTemperatureArrayValue ?newTemperatureArray.
+    ?s voc:lastUpdated ?newTime.
+}
+WHERE {
+    ?s rdf:type voc:IR_Sensor.
+    ?s voc:macAddress ?mac.
+    ?s voc:lastKnownTemperatureValue ?oldTemperature.
+    ?s voc:lastKnownTemperatureArrayValue ?oldTemperatureArray.
+    ?s voc:lastUpdated ?oldTime.
+}

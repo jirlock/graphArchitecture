@@ -4,16 +4,19 @@ PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
 PREFIX brick: <https://brickschema.org/schema/Brick#>
 
 DELETE {
-    ?s brick:lastKnownValue ?oldValue.
+    ?s voc:lastKnownHumidityValue ?oldHumidity.
+    ?s voc:lastKnownTemperatureValue ?oldTemperature.
     ?s voc:lastUpdated ?oldTime.
 }
 INSERT {
-    ?s brick:lastKnownValue ?newValue.
+    ?s voc:lastKnownHumidityValue ?newHumidity.
+    ?s voc:lastKnownTemperatureValue ?newTemperature.
     ?s voc:lastUpdated ?newTime.
 }
 WHERE {
-    ?s rdf:type brick:Illuminance_Sensor.
+    ?s rdf:type voc:Humidity_Temperature_Sensor.
     ?s voc:macAddress ?mac.
-    ?s brick:lastKnownValue ?oldValue.
+    ?s voc:lastKnownHumidityValue ?oldHumidity.
+    ?s voc:lastKnownTemperatureValue ?oldTemperature.
     ?s voc:lastUpdated ?oldTime.
 }

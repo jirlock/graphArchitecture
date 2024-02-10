@@ -72,6 +72,16 @@ def create_sparql_template(base_url, repo_id, template_id, query_string):
     }
     return requests.post(url, json=data)
 
+def create_sparql_template_from_file(base_url, repo_id, template_id, file_path):
+    url = base_url + '/rest/repositories/' + repo_id + '/sparql-templates'
+    with open(file_path, 'r') as f:
+        query_string = f.read()
+    json_data = {
+        "query": query_string,
+        "templateID": template_id
+    }
+    return requests.post(url, json=json_data)
+
 def edit_existing_sparql(base_url, repo_id, template_id, query_string):
     url = base_url + '/rest/repositories/' + repo_id + '/sparql-templates'
     param = {
@@ -91,7 +101,7 @@ def delete_sparql_template(base_url, repo_id, template_id):
 
 def execute_sparql_template(base_url, repo_id, template_id, json_data):
     url = base_url + '/rest/repositories/' + repo_id + '/sparql-templates/execute'
-    json_data["templateId": template_id]
+    json_data["templateId"] = template_id
     print(json_data)
     return requests.post(url, json=json_data)
 
@@ -117,6 +127,11 @@ def save_query(base_url, query_name, query_string):
     }
     return requests.post(url, json=json_data)
 
+def save_query_from_file(base_url, query_name, file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        query_string = f.read()
+    return save_query(base_url, query_name, query_string)
+
 def edit_query(base_url, query_name, query_string):
     url = base_url + '/rest/sparql/saved-queries'
     json_data = {
@@ -124,6 +139,11 @@ def edit_query(base_url, query_name, query_string):
         "name": query_name
     }
     return requests.put(url, json=json_data)
+
+def edit_query_from_file(base_url, query_name, file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        query_string = f.read()
+    return edit_query(base_url, query_name, query_string)
 
 def delete_query(base_url, query_name):
     url = base_url + '/rest/sparql/saved-queries'
@@ -144,9 +164,6 @@ def execute_query(base_url, repo_id, query_name, query_string):
     return requests.get(url, params=params)
 
 def execute_saved_query(base_url, repo_id, query_name):
-    url = base_url + '/rest/sparql/saved-queries'
-    params = { "name": query_name }
-    res = requests.get(url, params=params)
-    query_string = res.json()[0]["body"]
+    res = get_saved_query(base_url, query_name)
+    query_string = res.json()[0]['body']
     return execute_query(base_url, repo_id, query_name, query_string)
-

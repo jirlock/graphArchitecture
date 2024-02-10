@@ -1,34 +1,17 @@
 import myAzure
-import myMqtt
+import myMqtt as mqtt
 import myRdf as rdf
 import myGraphDB as gdb
-
-import requests
-import os
+import myLib
 
 if __name__ == '__main__':
 
     #this is temporal
-    rootDir = 'c:/Users/jirlo/graphArchitecture/'
-    dataDir = 'c:/Users/jirlo/graphArchitecture/data/'
+    rootDir = myLib.rootDir
+    dataDir = myLib.dataDir
 
-    #
-    baseUrl = 'http://localhost:7200'
-    repoId = 'test'
+    baseUrl = myLib.baseUrl
+    repoId = myLib.repoId
 
-    turtle_filename = 'utcmdx_resource.ttl'
-
-    r = gdb.copy_rdf_file_to_import_folder(dataDir + turtle_filename)
-    r = gdb.import_server_files(baseUrl, repoId, [turtle_filename])
+    r = myLib.get_ill_sensor_data(baseUrl, repoId, '8c:4b:14:15:94:10')
     print(r.text)
-
-'''
-    with open(dataDir+'query_tmp.txt', 'r') as f:
-        query_string = f.read()
-    r = gdb.execute_query_simple(baseUrl, repoId, query_string)
-    print(r.text)
-'''
-
-
-
-
