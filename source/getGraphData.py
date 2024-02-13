@@ -25,7 +25,15 @@ if __name__ == '__main__':
 
         ir_name = "IR Sensor " + k
         irSensors.append((myLib.Sensor_ir(ir_name, v, 0.0, [0.0 for _ in range(64)], 1700000000000)))
+
+    for sensor in illSensors:
+        sensor.update()
+        sensor.print_info()
     
     for sensor in shtSensors:
+        sensor.update()
+        sensor.print_info()
+
+    for sensor in irSensors:
         sensor.update()
         sensor.print_info()
