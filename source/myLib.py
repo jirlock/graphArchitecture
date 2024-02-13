@@ -99,28 +99,128 @@ def set_subscription_ir_sensor(mqtt_client, base_url, repo_id, mac_address):
 # Get Sensor Data
 #====================
 
-class ill_sensor:
+class Sensor_ill:
     def __init__(self, name, mac_address, illuminance, time):
         self.name = name
         self.mac_address = mac_address
         self.illuminance = illuminance
         self.time = time
+    
+    def print_info(self):
+        print('====================')
+        print('name: ' + self.name)
+        print('mac address: ' + self.mac_address)
+        print('illuminance:' + str(self.illuminance))
+        print('time: ' + str(self.time))
+        print('====================')
 
+    def update(self):
+        r = gdb.execute_saved_query(baseUrl, repoId, 'query_sensor_ill_' + self.mac_address)
+        for i, line in enumerate(r.text.split('\r\n')):
+            if i == 1:
+                try:
+                    name, illuminance, time = parse_ill_sensor_data(line)
+                    self.illuminance = illuminance
+                    self.time = time
+                    return True
+                except:
+                    break
+        return False
+
+class Sensor_sht:
+    def __init__(self, name, mac_address, humidity, temperature, time):
+        self.name = name
+        self.mac_address = mac_address
+        self.humidity = humidity
+        self.temperature = temperature
+        self.time = time
+
+    def print_info(self):
+        print('====================')
+        print('name: ' + self.name)
+        print('mac address: ' + self.mac_address)
+        print('humidity:' + str(self.humidity))
+        print('temperature: ' + str(self.temperature))
+        print('time: ' + str(self.time))
+        print('====================')
+
+    def update(self):
+        r = gdb.execute_saved_query(baseUrl, repoId, 'query_sensor_sht_' + self.mac_address)
+        for i, line in enumerate(r.text.split('\r\n')):
+            if i == 1:
+                try:
+                    name, humidity, temperature, time = parse_sht_sensor_data(line)
+                    self.humidity = humidity
+                    self.temperature = temperature
+                    self.time = time
+                    return True
+                except:
+                    break
+        return False
+
+class Sensor_ir:
+    def __init__(self, name, mac_address, temperature, arrayTemperature, time):
+        self.name = name
+        self.mac_address = mac_address
+        self.temperature = temperature
+        self.arrayTemperature = arrayTemperature
+        self.time = time
+
+    def print_info(self):
+        print('====================')
+        print('name: ' + self.name)
+        print('mac address: ' + self.mac_address)
+        print('temperature:' + str(self.temperature))
+        print('arrayTemperature: ' + str(self.arrayTemperature))
+        print('time: ' + str(self.time))
+        print('====================')
+
+    def update(self):
+        r = gdb.execute_saved_query(baseUrl, repoId, 'query_sensor_ir_' + self.mac_address)
+        for i, line in enumerate(r.text.split('\r\n')):
+            if i == 1:
+                name, temperature, arrayTemperature, time = parse_ir_sensor_data(line)
+                self.temperature = temperature
+                self.arrayTemperature = arrayTemperature
+                self.time = time
+                return True
+        return False
 
 def parse_ill_sensor_data(data_string):
-    data = []
-    for line in data_string.split('\r\n'):
-        data = [str(x) for x in line.split(',')]
+    data = [str(x) for x in data_string.split(',')]
+    name = data[0]
+    illuminance = int(data[1])
+    time = int(data[2])
+    return name, illuminance, time
 
+def parse_sht_sensor_data(data_string):
+    data = [str(x) for x in data_string.split(',')]
+    name = data[0]
+    humidity = float(data[1])
+    temperature = float(data[2])
+    time = int(data[3])
+    return name, humidity, temperature, time
 
+def parse_ir_sensor_data(data_string):
+    data = [str(x).replace('"[', "").replace(']"', "") for x in data_string.split(',')]
+    name = data[0]
+    temperature = float(data[1])
+    #arrayTemperature = list(data[2])
+    arrayTemperature = [float(x) for x in data[2:66]]
+    time = data[66]
+    return name, temperature, arrayTemperature, time
 
-def get_ill_sensor_data(base_url, repo_id):
+def get_ill_sensor_data_all(base_url, repo_id):
     r = gdb.execute_saved_query(base_url, repo_id, 'query_sensor_ill')
-    parse_ill_sensor_data(r.text)
-    return r
+    print(r.status_code)
+    return r.text
 
-def get_sht_sensor_data(base_url, repo_id):
-    return gdb.execute_saved_query(base_url, repo_id, 'query_sensor_sht')
+def get_sht_sensor_data_all(base_url, repo_id):
+    r = gdb.execute_saved_query(base_url, repo_id, 'query_sensor_sht')
+    print(r.status_code)
+    return r.text
 
-def get_ir_sensor_data(base_url, repo_id):
-    return gdb.execute_saved_query(base_url, repo_id, 'query_sensor_ir')
+def get_ir_sensor_data_all(base_url, repo_id):
+    r = gdb.execute_saved_query(base_url, repo_id, 'query_sensor_ir')
+    print(r.status_code)
+    return r.text

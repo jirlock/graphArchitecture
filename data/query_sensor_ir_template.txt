@@ -1,0 +1,13 @@
+PREFIX brick: <https://brickschema.org/schema/Brick#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
+
+select ?name ?temperature ?temperatureArray ?time
+where {
+    ?s rdf:type voc:IR_Sensor.
+    ?s rdfs:label ?name.
+    ?s voc:macAddress ?mac.
+    ?s voc:lastKnownTemperatureValue ?temperature.
+    ?s voc:lastKnownTemperatureArrayValue ?temperatureArray.
+    ?s voc:lastUpdated ?time.
+}
