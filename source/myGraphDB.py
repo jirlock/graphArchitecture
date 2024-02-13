@@ -5,7 +5,8 @@ import requests
 import os
 import shutil
 
-importFolderPath = 'C:/Users/jirlo/graphdb-import'
+#importFolderPath = 'C:/Users/jirlo/graphdb-import'
+importFolderPath = '/home/keijiro/graphdb-import'
 
 #====================
 # importing data

@@ -1,11 +1,20 @@
 import myGraphDB as gdb
 import myMqtt as mqtt
 
-rootDir = 'c:/Users/jirlo/graphArchitecture/'
-dataDir = 'c:/Users/jirlo/graphArchitecture/data/'
+
+#For Windows
+#rootDir = 'c:/Users/jirlo/graphArchitecture/'
+#dataDir = 'c:/Users/jirlo/graphArchitecture/data/'
+
+#baseUrl = 'http://localhost:7200'
+#repoId = 'test'
+
+#For Linux
+rootDir = '/home/keijiro/graphArchitecture/'
+dataDir = '/home/keijiro/graphArchitecture/data/'
 
 baseUrl = 'http://localhost:7200'
-repoId = 'test'
+repoId = 'repo_utcmdx'
 
 mqtt_broker = '133.11.95.82'
 mqtt_port = 18884
@@ -48,7 +57,8 @@ def set_subscription_ill_sensor(mqtt_client, base_url, repo_id, mac_address):
         #print(time)
         #print(illumination)
         r = update_illuminance_sensor(base_url, repo_id, mac_address, illumination, time)
-        print(r.text)
+        #print(r.text)
+        print('Updated Ill Sensor ' + mac_address + '\n')
     topic = mac_address + '/01/ill01'
     mqtt_client.message_callback_add(topic, on_message_ill_sensor)
     mqtt_client.subscribe(topic)
@@ -71,7 +81,8 @@ def set_subscription_sht_sensor(mqtt_client, base_url, repo_id, mac_address):
         #print(temperature)
         #print(humidity)
         r = update_sht_sensor(base_url, repo_id, mac_address, humidity, temperature, time)
-        print(r.text)
+        #print(r.text)
+        print('Updated Sht Sensor ' + mac_address + '\n')
     topic = mac_address + '/01/sht31'
     mqtt_client.message_callback_add(topic, on_message_sht_sensor)
     mqtt_client.subscribe(topic)
@@ -90,7 +101,8 @@ def set_subscription_ir_sensor(mqtt_client, base_url, repo_id, mac_address):
     def on_message_ir_sensor(client, userdata, msg):
         topic, time, temperature, temperature_array = mqtt.parse_ir_sensor(msg)
         r = update_ir_sensor(base_url, repo_id, mac_address, temperature, temperature_array, time)
-        print(r.text)
+        #print(r.text)
+        print('Updated IR Sensor ' + mac_address + '\n')
     topic = mac_address + '/01/array02'
     mqtt_client.message_callback_add(topic, on_message_ir_sensor)
     mqtt_client.subscribe(topic)

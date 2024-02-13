@@ -1,24 +1,31 @@
 import myLib
-import myGraphDB as gdb
-import pandas as pd
 
-rootDir = myLib.rootDir
-dataDir = myLib.dataDir
+if __name__ == '__main__':
 
-baseUrl = myLib.baseUrl
-repoId = myLib.repoId
+    #this is temporal
+    rootDir = myLib.rootDir
+    dataDir = myLib.dataDir
 
-ill_data = myLib.get_ill_sensor_data_all(baseUrl, repoId)
+    baseUrl = myLib.baseUrl
+    repoId = myLib.repoId
 
-#print(ill_data)
+    sensorInfo = myLib.sensor_info
 
-sht_data = myLib.get_sht_sensor_data_all(baseUrl, repoId)
-ir_data = myLib.get_ir_sensor_data_all(baseUrl, repoId)
+    #Create Objects
+    illSensors = []
+    shtSensors = []
+    irSensors = []
 
-temp_ill_sensor = myLib.Sensor_ill('Illuminance Sensor 2e', '08:3a:f2:23:cc:80', 0, 1700000000000)
-if (temp_ill_sensor.update(baseUrl, repoId)):
-    print(temp_ill_sensor.illuminance)
-    print(temp_ill_sensor.time)
+    for k,v in sensorInfo.items():
+        ill_name = "Illuminance Sensor " + k
+        illSensors.append(myLib.Sensor_ill(ill_name, v, 0, 1700000000000))
 
-#r = myLib.get_ir_sensor_data(baseUrl, repoId)
-#print(r.text)
+        sht_name = "Humidity Temperature Sensor " + k
+        shtSensors.append(myLib.Sensor_sht(sht_name, v, 0.0, 0.0, 1700000000000))
+
+        ir_name = "IR Sensor " + k
+        irSensors.append((myLib.Sensor_ir(ir_name, v, 0.0, [0.0 for _ in range(64)], 1700000000000)))
+    
+    for sensor in shtSensors:
+        sensor.update()
+        sensor.print_info()

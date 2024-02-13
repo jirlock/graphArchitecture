@@ -1,6 +1,6 @@
 import struct
-from azure.identity import DefaultAzureCredential
-from azure.digitaltwins.core import DigitalTwinsClient
+#from azure.identity import DefaultAzureCredential
+#from azure.digitaltwins.core import DigitalTwinsClient
 from paho.mqtt import client as mqttClient
 
 def convertTopic2Id(topic):
