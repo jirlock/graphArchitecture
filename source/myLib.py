@@ -125,6 +125,9 @@ class Sensor_ill:
         print('illuminance:' + str(self.illuminance))
         print('time: ' + str(self.time))
         print('====================')
+    
+    def get_info(self):
+        return self.name, self.mac_address, self.illuminance, self.time
 
     def update(self):
         r = gdb.execute_saved_query(baseUrl, repoId, 'query_sensor_ill_' + self.mac_address)
@@ -156,6 +159,9 @@ class Sensor_sht:
         print('time: ' + str(self.time))
         print('====================')
 
+    def get_info(self):
+        return self.name, self.mac_address, self.humidity, self.temperature, self.time
+
     def update(self):
         r = gdb.execute_saved_query(baseUrl, repoId, 'query_sensor_sht_' + self.mac_address)
         for i, line in enumerate(r.text.split('\r\n')):
@@ -186,6 +192,9 @@ class Sensor_ir:
         print('arrayTemperature: ' + str(self.arrayTemperature))
         print('time: ' + str(self.time))
         print('====================')
+
+    def get_info(self):
+        return self.name, self.mac_address, self.temperature, self.arrayTemperature, self.time
 
     def update(self):
         r = gdb.execute_saved_query(baseUrl, repoId, 'query_sensor_ir_' + self.mac_address)
