@@ -15,13 +15,14 @@ if __name__ == '__main__':
     baseUrl = myLib.baseUrl_sv
     repoId = myLib.repoId_sv
 
-    turtle_filename = 'utcmdx_resource.ttl'
+    #turtle_filename = 'utcmdx_resource.ttl'
+    turtle_filename = 'en01.ttl'
 
     gdb.copy_rdf_file_to_import_folder(dataDir + turtle_filename)
-    gdb.copy_rdf_file_to_import_folder(dataDir + 'Brick.ttl')
-    gdb.copy_rdf_file_to_import_folder(dataDir + 'rec.ttl')
-    #r = gdb.import_server_files(baseUrl, repoId, [turtle_filename])
-    r = gdb.import_server_files_all(baseUrl, repoId)
+    #gdb.copy_rdf_file_to_import_folder(dataDir + 'Brick.ttl')
+    #gdb.copy_rdf_file_to_import_folder(dataDir + 'rec.ttl')
+    r = gdb.import_server_files(baseUrl, repoId, [turtle_filename])
+    #r = gdb.import_server_files_all(baseUrl, repoId)
     print(r.text)
 
 

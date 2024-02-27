@@ -10,11 +10,11 @@ import myMqtt as mqtt
 #repoId = 'test'
 
 #For Linux
-rootDir = '/home/keijiro/graphArchitecture/'
-dataDir = '/home/keijiro/graphArchitecture/data/'
+rootDir_sv = '/home/keijiro/graphArchitecture/'
+dataDir_sv = '/home/keijiro/graphArchitecture/data/'
 
-baseUrl = 'http://localhost:7200'
-repoId = 'repo_utcmdx'
+baseUrl_sv = 'http://localhost:7200'
+repoId_sv = 'repo_utcmdx'
 
 mqtt_broker = '133.11.95.82'
 mqtt_port = 18884
