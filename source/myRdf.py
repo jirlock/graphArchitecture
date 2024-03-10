@@ -53,6 +53,9 @@ def createRoomUri(baseUri, campus, faculty, bldg, level, room):
 # Create RDF
 #====================
 #return String
+
+
+'''
 def createBuildingRdf(baseUri, campus, faculty, bldg, label):
     bldgUri = createBuildingUri(baseUri, campus, faculty, bldg)
     classTriple = bldgUri + ' a rec:Building.'
@@ -84,7 +87,7 @@ def createRoomRelationRdf(roomUri1, roomUri2):
 
 def executeSparqlTemplate():
     return 0
-
+'''
 
 #====================
 #New Version Create RDF
