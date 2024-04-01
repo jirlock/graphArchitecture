@@ -1,13 +1,13 @@
 PREFIX brick: <https://brickschema.org/schema/Brick#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
+PREFIX cmdx: <http://cmdx.u-tokyo.ac.jp/vocabulary#>
 
 select ?name ?mac ?humidity ?temperature ?time
 where {
-    ?s rdf:type voc:Humidity_Temperature_Sensor.
+    ?s rdf:type cmdx:Humidity_Temperature_Sensor.
     ?s rdfs:label ?name.
-    ?s voc:macAddress ?mac.
-    ?s voc:lastKnownHumidityValue ?humidity.
-    ?s voc:lastKnownTemperatureValue ?temperature.
-    ?s voc:lastUpdated ?time.
+    ?s cmdx:macAddress ?mac.
+    ?s cmdx:lastKnownHumidityValue ?humidity.
+    ?s cmdx:lastKnownTemperatureValue ?temperature.
+    ?s cmdx:lastUpdated ?time.
 }

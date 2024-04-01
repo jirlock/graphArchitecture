@@ -1,12 +1,12 @@
 PREFIX brick: <https://brickschema.org/schema/Brick#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
+PREFIX cmdx: <http://cmdx.u-tokyo.ac.jp/vocabulary#>
 
 select ?name ?mac ?value ?time
 where {
     ?s rdf:type brick:Illuminance_Sensor.
     ?s rdfs:label ?name.
-    ?s voc:macAddress ?mac.
+    ?s cmdx:macAddress ?mac.
     ?s brick:lastKnownValue ?value.
-    ?s voc:lastUpdated ?time.
+    ?s cmdx:lastUpdated ?time.
 }

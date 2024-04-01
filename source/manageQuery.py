@@ -22,8 +22,9 @@ for k,v in sensorInfo.items():
         s = f.read()
     queryString = s.replace('?mac', '"' + v + '"')
 
+    r = gdb.delete_query(baseUrl, queryName)
     r = gdb.save_query(baseUrl, queryName, queryString)
-    r = gdb.edit_query(baseUrl, queryName, queryString)
+    #r = gdb.edit_query(baseUrl, queryName, queryString)
     print(r.text)
 
 
@@ -34,8 +35,9 @@ for k,v in sensorInfo.items():
         s = f.read()
     queryString = s.replace('?mac', '"' + v + '"')
 
+    r = gdb.delete_query(baseUrl, queryName)
     r = gdb.save_query(baseUrl, queryName, queryString)
-    r = gdb.edit_query(baseUrl, queryName, queryString)
+    #r = gdb.edit_query(baseUrl, queryName, queryString)
     print(r.text)
 
 query_path_ir = myLib.dataDir + 'query_sensor_ir_template.txt'
@@ -45,6 +47,7 @@ for k,v in sensorInfo.items():
         s = f.read()
     queryString = s.replace('?mac', '"' + v + '"')
 
+    r = gdb.delete_query(baseUrl, queryName)
     r = gdb.save_query(baseUrl, queryName, queryString)
-    r = gdb.edit_query(baseUrl, queryName, queryString)
+    #r = gdb.edit_query(baseUrl, queryName, queryString)
     print(r.text)
