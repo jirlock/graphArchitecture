@@ -9,7 +9,8 @@ if __name__ == '__main__':
     baseUrl = myLib.baseUrl
     repoId = myLib.repoId
 
-    turtle_filename = 'utcmdx_resource.ttl'
+    turtle_filename = 'lec15sensor.ttl'
+    #turtle_filename = 'en01_new.ttl'
     #turtle_filename = 'en01.ttl'
     #turtle_filename = 'en10.ttl'
 

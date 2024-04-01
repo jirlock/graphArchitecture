@@ -1,19 +1,18 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX cmdx: <http://utcmdx.ac.jp/resource#>
-PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
+PREFIX cmdx: <http://cmdx.u-tokyo.ac.jp/vocabulary#>
 PREFIX brick: <https://brickschema.org/schema/Brick#>
 
 DELETE {
     ?s brick:lastKnownValue ?oldValue.
-    ?s voc:lastUpdated ?oldTime.
+    ?s cmdx:lastUpdated ?oldTime.
 }
 INSERT {
     ?s brick:lastKnownValue ?newValue.
-    ?s voc:lastUpdated ?newTime.
+    ?s cmdx:lastUpdated ?newTime.
 }
 WHERE {
     ?s rdf:type brick:Illuminance_Sensor.
-    ?s voc:macAddress ?mac.
+    ?s cmdx:macAddress ?mac.
     ?s brick:lastKnownValue ?oldValue.
-    ?s voc:lastUpdated ?oldTime.
+    ?s cmdx:lastUpdated ?oldTime.
 }

@@ -47,7 +47,7 @@ def update_illuminance_sensor(base_url, repo_id, mac_address, value, time):
         "newValue": value,
         "newTime": time
     }
-    templateId = 'http://utcmdx.ac.jp/templates/updateIlluminanceSensor'
+    templateId = 'http://cmdx.u-tokyo.ac.jp/templates/updateIlluminanceSensor'
     return gdb.execute_sparql_template(base_url, repo_id, templateId, json_data)
 
 def set_subscription_ill_sensor(mqtt_client, base_url, repo_id, mac_address):
@@ -70,7 +70,7 @@ def update_sht_sensor(base_url, repo_id, mac_address, humidity, temperature, tim
         "newTemperature": temperature,
         "newTime": time
     }
-    templateId = 'http://utcmdx.ac.jp/templates/updateShtSensor'
+    templateId = 'http://cmdx.u-tokyo.ac.jp/templates/updateShtSensor'
     return gdb.execute_sparql_template(base_url, repo_id, templateId, json_data)
 
 def set_subscription_sht_sensor(mqtt_client, base_url, repo_id, mac_address):
@@ -94,7 +94,7 @@ def update_ir_sensor(base_url, repo_id, mac_address, temperature, temperature_ar
         "newTemperatureArray": temperature_array,
         "newTime": time
     }
-    templateId = 'http://utcmdx.ac.jp/templates/updateIRSensor'
+    templateId = 'http://cmdx.u-tokyo.ac.jp/templates/updateIRSensor'
     return gdb.execute_sparql_template(base_url, repo_id, templateId, json_data)
 
 def set_subscription_ir_sensor(mqtt_client, base_url, repo_id, mac_address):

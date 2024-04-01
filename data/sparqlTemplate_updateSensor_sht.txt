@@ -1,22 +1,21 @@
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX cmdx: <http://utcmdx.ac.jp/resource#>
-PREFIX voc: <http://utcmdx.ac.jp/vocabulary#>
+PREFIX cmdx: <http://cmdx.u-tokyo.ac.jp/vocabulary#>
 PREFIX brick: <https://brickschema.org/schema/Brick#>
 
 DELETE {
-    ?s voc:lastKnownHumidityValue ?oldHumidity.
-    ?s voc:lastKnownTemperatureValue ?oldTemperature.
-    ?s voc:lastUpdated ?oldTime.
+    ?s cmdx:lastKnownHumidityValue ?oldHumidity.
+    ?s cmdx:lastKnownTemperatureValue ?oldTemperature.
+    ?s cmdx:lastUpdated ?oldTime.
 }
 INSERT {
-    ?s voc:lastKnownHumidityValue ?newHumidity.
-    ?s voc:lastKnownTemperatureValue ?newTemperature.
-    ?s voc:lastUpdated ?newTime.
+    ?s cmdx:lastKnownHumidityValue ?newHumidity.
+    ?s cmdx:lastKnownTemperatureValue ?newTemperature.
+    ?s cmdx:lastUpdated ?newTime.
 }
 WHERE {
-    ?s rdf:type voc:Humidity_Temperature_Sensor.
-    ?s voc:macAddress ?mac.
-    ?s voc:lastKnownHumidityValue ?oldHumidity.
-    ?s voc:lastKnownTemperatureValue ?oldTemperature.
-    ?s voc:lastUpdated ?oldTime.
+    ?s rdf:type cmdx:Humidity_Temperature_Sensor.
+    ?s cmdx:macAddress ?mac.
+    ?s cmdx:lastKnownHumidityValue ?oldHumidity.
+    ?s cmdx:lastKnownTemperatureValue ?oldTemperature.
+    ?s cmdx:lastUpdated ?oldTime.
 }
