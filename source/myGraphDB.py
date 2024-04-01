@@ -103,7 +103,7 @@ def delete_sparql_template(base_url, repo_id, template_id):
 def execute_sparql_template(base_url, repo_id, template_id, json_data):
     url = base_url + '/rest/repositories/' + repo_id + '/sparql-templates/execute'
     json_data["templateId"] = template_id
-    print(json_data)
+    #print(json_data)
     return requests.post(url, json=json_data)
 
 

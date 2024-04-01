@@ -4,11 +4,17 @@ import myLib
 if __name__ == '__main__':
 
     #this is temporal
-    rootDir = myLib.rootDir
-    dataDir = myLib.dataDir
+    #rootDir = myLib.rootDir
+    #dataDir = myLib.dataDir
 
-    baseUrl = myLib.baseUrl
-    repoId = myLib.repoId
+    #baseUrl = myLib.baseUrl
+    #repoId = myLib.repoId
+
+    rootDir = myLib.rootDir_sv
+    dataDir = myLib.dataDir_sv
+
+    baseUrl = myLib.baseUrl_sv
+    repoId = myLib.repoId_sv
 
     mqtt_broker = myLib.mqtt_broker
     mqtt_port = myLib.mqtt_port

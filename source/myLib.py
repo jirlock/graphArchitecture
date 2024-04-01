@@ -10,11 +10,11 @@ import myMqtt as mqtt
 #repoId = 'test'
 
 #For Linux
-rootDir_sv = '/home/keijiro/graphArchitecture/'
-dataDir_sv = '/home/keijiro/graphArchitecture/data/'
+rootDir = '/home/keijiro/graphArchitecture/'
+dataDir = '/home/keijiro/graphArchitecture/data/'
 
-baseUrl_sv = 'http://localhost:7200'
-repoId_sv = 'repo_utcmdx'
+baseUrl = 'http://localhost:7200'
+repoId = 'repo_utcmdx'
 
 mqtt_broker = '133.11.95.82'
 mqtt_port = 18884
@@ -28,12 +28,12 @@ sensor_info = {
     '3c': '08:3a:f2:2d:47:d0',
     '3w1': '08:3a:f2:2c:58:14',
     '3w2': '8c:4b:14:15:7e:84',
-    '4e2': '08:4b:14:15:bf:b8',
-    '4e1': '8c:4b:14:14:91:bc',
+    '4e2': '8c:4b:14:15:bf:b8',
+    '4e1': '8c:4b:14:14:91:dc',
     '4c': '08:3a:f2:2d:47:80',
     '4w1': '78:e3:6d:11:3d:20',
     '4w2': '94:b9:7e:65:fc:00',
-    '5c': '8c:4b:14:15:9f:dc'
+    '5c': '8c:4b:14:15:9f:dc',
 }
 
 

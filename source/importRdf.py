@@ -3,20 +3,15 @@ import myGraphDB as gdb
 
 if __name__ == '__main__':
 
-    #rootDir = myLib.rootDir
-    #dataDir = myLib.dataDir
+    rootDir = myLib.rootDir
+    dataDir = myLib.dataDir
 
-    rootDir = myLib.rootDir_sv
-    dataDir = myLib.dataDir_sv
+    baseUrl = myLib.baseUrl
+    repoId = myLib.repoId
 
-    #baseUrl = myLib.baseUrl
-    #repoId = myLib.repoId
-
-    baseUrl = myLib.baseUrl_sv
-    repoId = myLib.repoId_sv
-
-    #turtle_filename = 'utcmdx_resource.ttl'
-    turtle_filename = 'en01.ttl'
+    turtle_filename = 'utcmdx_resource.ttl'
+    #turtle_filename = 'en01.ttl'
+    #turtle_filename = 'en10.ttl'
 
     gdb.copy_rdf_file_to_import_folder(dataDir + turtle_filename)
     #gdb.copy_rdf_file_to_import_folder(dataDir + 'Brick.ttl')

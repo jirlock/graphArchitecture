@@ -22,7 +22,7 @@ for k,v in sensorInfo.items():
         s = f.read()
     queryString = s.replace('?mac', '"' + v + '"')
 
-    #r = gdb.save_query(baseUrl, queryName, queryString)
+    r = gdb.save_query(baseUrl, queryName, queryString)
     r = gdb.edit_query(baseUrl, queryName, queryString)
     print(r.text)
 
@@ -34,7 +34,7 @@ for k,v in sensorInfo.items():
         s = f.read()
     queryString = s.replace('?mac', '"' + v + '"')
 
-    #r = gdb.save_query(baseUrl, queryName, queryString)
+    r = gdb.save_query(baseUrl, queryName, queryString)
     r = gdb.edit_query(baseUrl, queryName, queryString)
     print(r.text)
 
@@ -45,6 +45,6 @@ for k,v in sensorInfo.items():
         s = f.read()
     queryString = s.replace('?mac', '"' + v + '"')
 
-    #r = gdb.save_query(baseUrl, queryName, queryString)
+    r = gdb.save_query(baseUrl, queryName, queryString)
     r = gdb.edit_query(baseUrl, queryName, queryString)
     print(r.text)
