@@ -1,0 +1,342 @@
+@prefix cmdx: <http://cmdx.u-tokyo.ac.jp/vocabulary#>.
+@prefix utokyo: <http://cmdx.u-tokyo.ac.jp/resource#>.
+@prefix brick: <https://brickschema.org/schema/Brick#>.
+
+utokyo:sensor0 a brick:Illuminance_Sensor.
+utokyo:sensor0 rdfs:label "Illuminance Sensor 2e".
+utokyo:sensor0 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor0.
+utokyo:sensor0 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor0 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor0 cmdx:macAddress "08:3a:f2:23:cc:80".
+
+utokyo:sensor1 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor1 rdfs:label "Humidity Temperature Sensor 2e".
+utokyo:sensor1 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor1.
+utokyo:sensor1 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor1 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor1 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor1 cmdx:macAddress "08:3a:f2:23:cc:80".
+
+utokyo:sensor2 a cmdx:IR_Sensor.
+utokyo:sensor2 rdfs:label "IR Sensor 2e".
+utokyo:sensor2 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor2.
+utokyo:sensor2 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor2 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor2 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor2 cmdx:macAddress "08:3a:f2:23:cc:80".
+
+utokyo:sensor3 a brick:Illuminance_Sensor.
+utokyo:sensor3 rdfs:label "Illuminance Sensor 2w".
+utokyo:sensor3 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor3.
+utokyo:sensor3 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor3 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor3 cmdx:macAddress "08:3a:f2:22:d1:40".
+
+utokyo:sensor4 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor4 rdfs:label "Humidity Temperature Sensor 2w".
+utokyo:sensor4 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor4.
+utokyo:sensor4 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor4 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor4 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor4 cmdx:macAddress "08:3a:f2:22:d1:40".
+
+utokyo:sensor5 a cmdx:IR_Sensor.
+utokyo:sensor5 rdfs:label "IR Sensor 2w".
+utokyo:sensor5 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor5.
+utokyo:sensor5 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor5 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor5 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor5 cmdx:macAddress "08:3a:f2:22:d1:40".
+
+utokyo:sensor6 a brick:Illuminance_Sensor.
+utokyo:sensor6 rdfs:label "Illuminance Sensor 3e2".
+utokyo:sensor6 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor6.
+utokyo:sensor6 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor6 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor6 cmdx:macAddress "8c:4b:14:15:94:10".
+
+utokyo:sensor7 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor7 rdfs:label "Humidity Temperature Sensor 3e2".
+utokyo:sensor7 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor7.
+utokyo:sensor7 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor7 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor7 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor7 cmdx:macAddress "8c:4b:14:15:94:10".
+
+utokyo:sensor8 a cmdx:IR_Sensor.
+utokyo:sensor8 rdfs:label "IR Sensor 3e2".
+utokyo:sensor8 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor8.
+utokyo:sensor8 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor8 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor8 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor8 cmdx:macAddress "8c:4b:14:15:94:10".
+
+utokyo:sensor9 a brick:Illuminance_Sensor.
+utokyo:sensor9 rdfs:label "Illuminance Sensor 3e1".
+utokyo:sensor9 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor9.
+utokyo:sensor9 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor9 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor9 cmdx:macAddress "08:3a:f2:2b:70:ec".
+
+utokyo:sensor10 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor10 rdfs:label "Humidity Temperature Sensor 3e1".
+utokyo:sensor10 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor10.
+utokyo:sensor10 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor10 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor10 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor10 cmdx:macAddress "08:3a:f2:2b:70:ec".
+
+utokyo:sensor11 a cmdx:IR_Sensor.
+utokyo:sensor11 rdfs:label "IR Sensor 3e1".
+utokyo:sensor11 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor11.
+utokyo:sensor11 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor11 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor11 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor11 cmdx:macAddress "08:3a:f2:2b:70:ec".
+
+utokyo:sensor12 a brick:Illuminance_Sensor.
+utokyo:sensor12 rdfs:label "Illuminance Sensor 3c".
+utokyo:sensor12 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor12.
+utokyo:sensor12 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor12 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor12 cmdx:macAddress "08:3a:f2:2d:47:d0".
+
+utokyo:sensor13 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor13 rdfs:label "Humidity Temperature Sensor 3c".
+utokyo:sensor13 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor13.
+utokyo:sensor13 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor13 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor13 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor13 cmdx:macAddress "08:3a:f2:2d:47:d0".
+
+utokyo:sensor14 a cmdx:IR_Sensor.
+utokyo:sensor14 rdfs:label "IR Sensor 3c".
+utokyo:sensor14 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor14.
+utokyo:sensor14 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor14 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor14 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor14 cmdx:macAddress "08:3a:f2:2d:47:d0".
+
+utokyo:sensor15 a brick:Illuminance_Sensor.
+utokyo:sensor15 rdfs:label "Illuminance Sensor 3w1".
+utokyo:sensor15 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor15.
+utokyo:sensor15 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor15 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor15 cmdx:macAddress "08:3a:f2:2c:58:14".
+
+utokyo:sensor16 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor16 rdfs:label "Humidity Temperature Sensor 3w1".
+utokyo:sensor16 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor16.
+utokyo:sensor16 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor16 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor16 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor16 cmdx:macAddress "08:3a:f2:2c:58:14".
+
+utokyo:sensor17 a cmdx:IR_Sensor.
+utokyo:sensor17 rdfs:label "IR Sensor 3w1".
+utokyo:sensor17 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor17.
+utokyo:sensor17 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor17 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor17 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor17 cmdx:macAddress "08:3a:f2:2c:58:14".
+
+utokyo:sensor18 a brick:Illuminance_Sensor.
+utokyo:sensor18 rdfs:label "Illuminance Sensor 3w2".
+utokyo:sensor18 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor18.
+utokyo:sensor18 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor18 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor18 cmdx:macAddress "8c:4b:14:15:7e:84".
+
+utokyo:sensor19 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor19 rdfs:label "Humidity Temperature Sensor 3w2".
+utokyo:sensor19 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor19.
+utokyo:sensor19 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor19 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor19 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor19 cmdx:macAddress "8c:4b:14:15:7e:84".
+
+utokyo:sensor20 a cmdx:IR_Sensor.
+utokyo:sensor20 rdfs:label "IR Sensor 3w2".
+utokyo:sensor20 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor20.
+utokyo:sensor20 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor20 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor20 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor20 cmdx:macAddress "8c:4b:14:15:7e:84".
+
+utokyo:sensor21 a brick:Illuminance_Sensor.
+utokyo:sensor21 rdfs:label "Illuminance Sensor 4e2".
+utokyo:sensor21 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor21.
+utokyo:sensor21 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor21 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor21 cmdx:macAddress "8c:4b:14:15:bf:b8".
+
+utokyo:sensor22 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor22 rdfs:label "Humidity Temperature Sensor 4e2".
+utokyo:sensor22 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor22.
+utokyo:sensor22 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor22 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor22 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor22 cmdx:macAddress "8c:4b:14:15:bf:b8".
+
+utokyo:sensor23 a cmdx:IR_Sensor.
+utokyo:sensor23 rdfs:label "IR Sensor 4e2".
+utokyo:sensor23 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor23.
+utokyo:sensor23 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor23 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor23 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor23 cmdx:macAddress "8c:4b:14:15:bf:b8".
+
+utokyo:sensor24 a brick:Illuminance_Sensor.
+utokyo:sensor24 rdfs:label "Illuminance Sensor 4e1".
+utokyo:sensor24 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor24.
+utokyo:sensor24 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor24 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor24 cmdx:macAddress "8c:4b:14:14:91:dc".
+
+utokyo:sensor25 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor25 rdfs:label "Humidity Temperature Sensor 4e1".
+utokyo:sensor25 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor25.
+utokyo:sensor25 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor25 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor25 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor25 cmdx:macAddress "8c:4b:14:14:91:dc".
+
+utokyo:sensor26 a cmdx:IR_Sensor.
+utokyo:sensor26 rdfs:label "IR Sensor 4e1".
+utokyo:sensor26 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor26.
+utokyo:sensor26 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor26 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor26 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor26 cmdx:macAddress "8c:4b:14:14:91:dc".
+
+utokyo:sensor27 a brick:Illuminance_Sensor.
+utokyo:sensor27 rdfs:label "Illuminance Sensor 4c".
+utokyo:sensor27 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor27.
+utokyo:sensor27 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor27 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor27 cmdx:macAddress "08:3a:f2:2d:47:80".
+
+utokyo:sensor28 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor28 rdfs:label "Humidity Temperature Sensor 4c".
+utokyo:sensor28 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor28.
+utokyo:sensor28 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor28 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor28 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor28 cmdx:macAddress "08:3a:f2:2d:47:80".
+
+utokyo:sensor29 a cmdx:IR_Sensor.
+utokyo:sensor29 rdfs:label "IR Sensor 4c".
+utokyo:sensor29 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor29.
+utokyo:sensor29 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor29 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor29 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor29 cmdx:macAddress "08:3a:f2:2d:47:80".
+
+utokyo:sensor30 a brick:Illuminance_Sensor.
+utokyo:sensor30 rdfs:label "Illuminance Sensor 4w1".
+utokyo:sensor30 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor30.
+utokyo:sensor30 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor30 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor30 cmdx:macAddress "78:e3:6d:11:3d:20".
+
+utokyo:sensor31 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor31 rdfs:label "Humidity Temperature Sensor 4w1".
+utokyo:sensor31 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor31.
+utokyo:sensor31 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor31 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor31 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor31 cmdx:macAddress "78:e3:6d:11:3d:20".
+
+utokyo:sensor32 a cmdx:IR_Sensor.
+utokyo:sensor32 rdfs:label "IR Sensor 4w1".
+utokyo:sensor32 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor32.
+utokyo:sensor32 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor32 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor32 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor32 cmdx:macAddress "78:e3:6d:11:3d:20".
+
+utokyo:sensor33 a brick:Illuminance_Sensor.
+utokyo:sensor33 rdfs:label "Illuminance Sensor 4w2".
+utokyo:sensor33 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor33.
+utokyo:sensor33 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor33 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor33 cmdx:macAddress "94:b9:7e:65:fc:00".
+
+utokyo:sensor34 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor34 rdfs:label "Humidity Temperature Sensor 4w2".
+utokyo:sensor34 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor34.
+utokyo:sensor34 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor34 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor34 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor34 cmdx:macAddress "94:b9:7e:65:fc:00".
+
+utokyo:sensor35 a cmdx:IR_Sensor.
+utokyo:sensor35 rdfs:label "IR Sensor 4w2".
+utokyo:sensor35 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor35.
+utokyo:sensor35 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor35 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor35 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor35 cmdx:macAddress "94:b9:7e:65:fc:00".
+
+utokyo:sensor36 a brick:Illuminance_Sensor.
+utokyo:sensor36 rdfs:label "Illuminance Sensor 5c".
+utokyo:sensor36 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor36.
+utokyo:sensor36 brick:lastKnownValue "0.0"^^xsd:unsignedShort.
+utokyo:sensor36 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor36 cmdx:macAddress "8c:4b:14:15:9f:dc".
+
+utokyo:sensor37 a cmdx:Humidity_Temperature_Sensor.
+utokyo:sensor37 rdfs:label "Humidity Temperature Sensor 5c".
+utokyo:sensor37 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor37.
+utokyo:sensor37 cmdx:lastKnownHumidityValue "0.0"^^xsd:float.
+utokyo:sensor37 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor37 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor37 cmdx:macAddress "8c:4b:14:15:9f:dc".
+
+utokyo:sensor38 a cmdx:IR_Sensor.
+utokyo:sensor38 rdfs:label "IR Sensor 5c".
+utokyo:sensor38 brick:isPointOf utokyo:room127.
+utokyo:room127 brick:hasPoint utokyo:sensor38.
+utokyo:sensor38 cmdx:lastKnownTemperatureValue "0.0"^^xsd:float.
+utokyo:sensor38 cmdx:lastKnownTemperatureArrayValue "[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]".
+utokyo:sensor38 cmdx:lastUpdated "0"^^xsd:long.
+utokyo:sensor38 cmdx:macAddress "8c:4b:14:15:9f:dc".
+
